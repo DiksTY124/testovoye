@@ -1,0 +1,35 @@
+# Исключаем папку bitrix, но оставляем некоторые важные подпапки
+/bitrix/*
+!/bitrix/php_interface/
+!/bitrix/templates/
+!/bitrix/components/
+
+# Исключаем стандартные компоненты Битрикс, но оставляем кастомные
+/bitrix/components/bitrix/
+
+# Исключаем файлы с настройками базы данных (безопасность)
+/bitrix/php_interface/dbconn.php
+/bitrix/php_interface/after_connect*
+
+# Исключаем папку для загруженных файлов (изображения, документы)
+/upload/
+
+# Исключаем все архивы
+*.zip
+*.rar
+*.tar.gz
+*.7z
+*.gz
+
+# Исключаем системные файлы и временные данные
+.DS_Store
+Thumbs.db
+*.log
+/cgi-bin/
+/awstats/
+
+# Исключаем кеш-директории Битрикс
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/stack_cache/
+/bitrix/html_pages/
