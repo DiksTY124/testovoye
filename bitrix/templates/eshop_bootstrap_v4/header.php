@@ -196,7 +196,7 @@ $curPage = $APPLICATION->GetCurPage(true);
 					<div class="col" id="navigation">
 						<?$APPLICATION->IncludeComponent(
 							"bitrix:breadcrumb",
-							"universal",
+							"json",
 							array(
 								"START_FROM" => "0",
 								"PATH" => "",
